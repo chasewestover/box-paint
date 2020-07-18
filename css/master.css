@@ -1,12 +1,19 @@
+.menu {
+  height: 200px;
+  width: 500px;
+  margin: auto;
+  margin-top: 200px;
+}
+
 .container {
   display: grid;
   background-color: white;
   height:100%;
-  width: 100%;
-
-  grid-template-columns: repeat(16,auto);
-  grid-template-rows: repeat(16,auto);
-  grid-gap: 1px;
+  width:100%;
+  --col:30;
+  grid-template-columns: repeat(var(--col),auto);
+  grid-template-rows: repeat(var(--col),auto);
+  grid-gap: 0px;
 }
 
 .box {
@@ -16,4 +23,8 @@
 html,body {
   height: 100%;
   margin: 0px;
+}
+
+.box-over {
+  background-color: white !important;
 }

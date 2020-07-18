@@ -6,9 +6,19 @@
     <title></title>
   </head>
   <body>
-    <div class="container">
-
+    <div class="menu">
+      <h2>Box Paint</h2>
+      <h3>Move your mouse around the page to paint. Press certain keys to change the color</h3>
+      <form action="drawing.html">
+        <input type="text" placeholder="number of pixel columns" id="yes">
+        <input type="submit" onclick="saveData()">
+      </form>
     </div>
+    <script type="text/javascript">
+      function saveData() {
+        var input = document.querySelector("#yes");
+        sessionStorage.setItem("columns", input.value);
+      }
+    </script>
   </body>
-  <script src="etch.js" charset="utf-8"></script>
 </html>
