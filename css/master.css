@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  background-color: white;
+  height:100%;
+  width: 100%;
+
+  grid-template-columns: repeat(16,auto);
+  grid-template-rows: repeat(16,auto);
+  grid-gap: 1px;
+}
+
+.box {
+  background-color: black;
+}
+
+html,body {
+  height: 100%;
+  margin: 0px;
+}
